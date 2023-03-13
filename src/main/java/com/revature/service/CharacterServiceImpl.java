@@ -52,19 +52,6 @@ public class CharacterServiceImpl implements CharacterService{
         }
     }
 
-//    @Override
-//    public List<Character> getAll(String flag) {
-//        return switch (flag) {
-//            case "thieves" -> characterRepository.findThieves();
-//            case "pirates" -> characterRepository.findPirates();
-//            case "magicians" -> characterRepository.findMagicians();
-//            case "archers" -> characterRepository.findArchers();
-//            case "warriors" -> characterRepository.findWarriors();
-//            default -> characterRepository.findAll();
-//        };
-//    }
-
-
     @Override
     public List<Character> findByName(String name) {
         return characterRepository.findByName(name);
